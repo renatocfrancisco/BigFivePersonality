@@ -1,10 +1,13 @@
-# Big Five Personality Test <!-- omit in toc -->
-# Table of contents <!-- omit in toc -->
-- [Pipeline](#pipeline)
-- [Data](#data)
-- [Modelling](#modelling)
-- [References](#references)
-The following project developed a solution to grade Big Five Personality Tests. The project was developed according to CRISP-DM phases, as follows:
+# Big Five Personality Test
+
+## Table of contents
+
+- [Big Five Personality Test](#big-five-personality-test)
+  - [Table of contents](#table-of-contents)
+    - [Pipeline](#pipeline)
+    - [Data](#data)
+    - [Modelling](#modelling)
+      - [References](#references)
 
 <center><img src="assets/CRISPDM.png" alt="CRISPDM" style="width: 500px;"/></center>
 <center><i>Figure 1. CRISP-DM Methodology.<br>Source: [1-2].</i></center>
@@ -19,27 +22,33 @@ The `target variable` corresponds to the trait with max value of the test. Furth
 |      Neuroticism       |   N   | How emotional the person can be                                                                                                        |
 | Openness to Experience |   O   | **High Scores:** People who tend to “dream with their eyes open”<br>**Low Scores:** People who tend to “have their feet on the ground” |
 
-# Pipeline
+### Pipeline
+
 The following pipeline summarizes the steps and procedures which have been taken into account during training / validation and testing.
 
 <center><img src="assets/Pipeline.png" alt="Pipeline" style="width: 900px;"/></center>
 <center><i>Figure 2. Pipeline.<br></i></center>
 
-# Data
+### Data
+
 The exploratory Data Analysis allowed us to conclude that there were a imbalance in `target variable`. Then two approaches to go over this situation were followed:
 
 - UnderSampling
 - Oversampling
 
 Data can be downloaded [here](https://drive.google.com/file/d/1PWuVxvaP_L5dkPZhgQtoOv9FIQhUEXgd/view?usp=sharing).
-# Modelling
+
+### Modelling
+
 The project at hand corresponds to a problem of multiclass classification. The following classifiers were trained and validated:
+
 - Logistic Regression Classifier
 - Decision Tree Classifier
 - Random Forest Classifier
 - Naive Bayes Classifier
 
-# References
+#### References
+
     [1]	M. F. Hornick, E. Marcadé, and S. Venkayala, “Chapter 3 - Data Mining Process,” in The Morgan Kaufmann Series in Data Management Systems, M. F. Hornick, E. Marcadé, and S. B. T.-J. D. M. Venkayala, Eds. Burlington: Morgan Kaufmann, 2007, pp. 51–83.
     [2]	“File:CRISP-DM Process Diagram.png - Wikimedia Commons.” .
     [3]	B. Tunguz, L. Petar, and M. Akdag, “Big Five Personality Test | 1M Answers to 50 personality items, and technical information.” [Online]. Available: https://www.kaggle.com/tunguz/big-five-personality-test. [Accessed: 20-Jun-2020].
